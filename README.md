@@ -1,1 +1,1 @@
-https://vlad-povalii.github.io/UdmPractice/
+https://vlad-povalii.github.io/UdmPractice/Uber_landing
