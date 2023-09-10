@@ -42,6 +42,14 @@
             }
         }
     }
+
+    .consultation {
+        .title_left {
+            br {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width : 767px) {
@@ -137,6 +145,12 @@
         &_main {
             font-size: 8px;
         }
+
+        &_submit {
+            width: 100%;
+            height: 48px;
+            font-size: 14px;
+        }
     }
 
     .advantages {
@@ -164,6 +178,31 @@
 
     .title {
         font-size: 24px;
+
+        &_left {
+            line-height: 32px;
+            text-align: center;
+        }
+    }
+
+    .consultation {
+        min-height: 0;
+        padding: 40px 0;
+
+        &__desc {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+
+    .feed-form {
+        margin: 36px auto 0;
+        width: 280px;
+
+        input {
+            height: 44px;
+        }
     }
 }
 
@@ -238,6 +277,12 @@
         &_main {
             font-size: 7px;
         }
+
+        &_submit {
+            width: 100%;
+            height: 30px;
+            font-size: 8px;
+        }
     }
 
     .advantages {
@@ -264,5 +309,31 @@
 
     .title {
         font-size: 18px;
+
+        &_left {
+            line-height: 20px;
+        }
+    }
+
+    .consultation {
+        &__desc {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+    .feed-form {
+        width: 146px;
+
+        input {
+            padding: 0 8px;
+            margin-bottom: 6px;
+            height: 28px;
+            font-size: 8px;
+
+            &:nth-child(3) {
+                margin-bottom: 10px;
+            }
+        }
     }
 }
