@@ -50,6 +50,14 @@
             }
         }
     }
+
+    .carousel {
+        padding: 50px 0;
+
+        &__container {
+            width: 500px;
+        }
+    }
 }
 
 @media (max-width : 767px) {
@@ -204,6 +212,19 @@
             height: 44px;
         }
     }
+
+    .carousel {
+        padding: 40px 0;
+
+        .prev,
+        .next {
+            display: none;
+        }
+
+        &__container {
+            width: 380px;
+        }
+    }
 }
 
 @media (max-width : 575px) {
@@ -334,6 +355,12 @@
             &:nth-child(3) {
                 margin-bottom: 10px;
             }
+        }
+    }
+
+    .carousel {
+        &__container {
+            width: 270px;
         }
     }
 }
