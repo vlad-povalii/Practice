@@ -58,6 +58,30 @@
             width: 500px;
         }
     }
+
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+
+        &-item:nth-child(3n) {
+            margin-right: 16px;
+        }
+    }
+
+    .footer {
+        &__info {
+            padding: 30px 35px 35px;
+        }
+
+        &__phone {
+            margin-top: 25px;
+        }
+
+        &__social {
+            margin-top: 30px;
+        }
+    }
 }
 
 @media (max-width : 767px) {
@@ -225,6 +249,39 @@
             width: 380px;
         }
     }
+
+    .catalog {
+        &-item {
+            margin-right: 8px;
+            margin-bottom: 8px;
+            padding: 10px;
+            width: 254px;
+
+            &:nth-child(3n) {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .footer {
+        &__info {
+            width: 350px;
+            padding-bottom: 30px;
+        }
+
+        &__adress {
+            font-size: 18px;
+        }
+
+        &__phone {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        &__social {
+            margin-top: 25px;
+        }
+    }
 }
 
 @media (max-width : 575px) {
@@ -361,6 +418,73 @@
     .carousel {
         &__container {
             width: 270px;
+        }
+    }
+
+    .catalog {
+        padding-bottom: 40px;
+
+        &__tabs {
+            margin-top: 38px;
+        }
+
+        &__tab {
+            width: 80px;
+            height: 30px;
+            font-size: 8px;
+            line-height: 28px;
+        }
+
+        &__content {
+            margin-top: 30px;
+        }
+
+        &-item {
+            min-height: 416px;
+        }
+    }
+
+    .reviews {
+        &__item {
+            margin-top: 40px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__img {
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+
+        &__desc {
+            line-height: 20px;
+        }
+    }
+
+    .footer {
+        &__info {
+            width: inherit;
+            padding: 20px 20px 20px
+        }
+
+        &__adress {
+            font-size: 16px;
+        }
+
+        &__phone {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        &__social {
+            margin-top: 18px;
+            column-gap: 18px;
+        }
+
+        &__social-item {
+            width: 48px;
+            height: 47px;
         }
     }
 }
