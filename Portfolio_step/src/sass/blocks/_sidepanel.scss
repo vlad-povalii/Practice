@@ -1,0 +1,72 @@
+.sidepanel {
+    position: fixed;
+    top: 50%;
+    left: 52px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    z-index: 1;
+
+    &__link {
+        width: 20px;
+        height: 20px;
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        .facebook-90 {
+            background: url('../icons/sidepanel/facebook-90deg.svg') center (center/cover) no-repeat;
+        }
+
+        .instagram-90 {
+            background: url('../icons/sidepanel/instagram-90deg.svg') center (center/cover) no-repeat;
+        }
+
+        .github-90 {
+            background: url('../icons/sidepanel/github-90deg.svg') center (center/cover) no-repeat;
+        }
+
+        &:hover {
+            .facebook-90 {
+                background: url('../icons/sidepanel/facebook-90deg_yellow.svg') center (center/cover) no-repeat;
+            }
+
+            .instagram-90 {
+                background: url('../icons/sidepanel/instagram-90deg_yellow.svg') center (center/cover) no-repeat;
+            }
+
+            .github-90 {
+                background: url('../icons/sidepanel/github-90deg_yellow.svg') center (center/cover) no-repeat;
+            }
+        }
+    }
+
+    &__divider {
+        height: 70px;
+        width: 2px;
+        background-color: #000;
+    }
+
+    &__text {
+        height: 108px;
+        width: 24px;
+
+        span {
+            display: block;
+            width: 108px;
+            transform: rotate(-90deg) translate(-40%, -176%);
+            font-size: 16px;
+            font-weight: 700;
+            text-align: end;
+        }
+    }
+
+    svg:hover path {
+        fill: $main-color;
+    }
+}

@@ -1,0 +1,100 @@
+.experience {
+    padding-top: 120px;
+
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 65px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 136px;
+    }
+
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: calc(35px + 15px); // padding-left + circle width
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $main-color;
+            }
+        }
+
+        ul {
+            position: relative;
+            padding-left: 50px;
+            list-style-type: none;
+
+            li {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -16px;
+                    left: 7px; // half of circle 7.5 - (half of line width 0.5)
+                    width: 1px;
+                    height: calc(100% + 16px); // height of li + top 16px (top -16px) of li before
+                    background-color: #000;
+                }
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 63px; // -header padding-top 45px + half of circle 18px
+            left: -42px; // ul padding-left -50px + left of li before 7px + 1px width of li before (line)
+            width: 42px;
+            height: 1px;
+            background-color: #000;
+        }
+
+        &-header {
+            padding-top: 45px;
+            display: flex;
+        }
+
+        &-icon {
+            position: relative;
+            padding-left: 15px;
+            @include before_circle;
+            padding-top: 15px;
+
+            img {
+                max-width: 25px;
+            }
+        }
+
+        &-desc {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                margin-bottom: 0px;
+            }
+        }
+
+        &-location {
+            font-size: 12px;
+            line-height: normal;
+        }
+
+        &-body {
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: normal;
+        }
+    }
+}
