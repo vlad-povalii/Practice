@@ -25,9 +25,9 @@ counters.forEach((item, index) => {
 
 // Smooth scroll and pageup 
 window.addEventListener('scroll', function () {
-    // const scrollPosition = window.scrollY;
+    const scrollPosition = window.scrollY;
     // OR
-    const scrollPosition = document.documentElement.scrollTop;
+    // const scrollPosition = document.documentElement.scrollTop;
     const pageUpEl = document.querySelector('.pageup');
     if (scrollPosition > 685) {
         pageUpEl.style.display = 'block';
