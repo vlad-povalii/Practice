@@ -21,3 +21,17 @@ const lines = document.querySelectorAll('.skills__rating-line span');
 counters.forEach((item, index) => {
     lines[index].style.width = item.innerText;
 })
+
+
+// Smooth scroll and pageup 
+window.addEventListener('scroll', function () {
+    // const scrollPosition = window.scrollY;
+    // OR
+    const scrollPosition = document.documentElement.scrollTop;
+    const pageUpEl = document.querySelector('.pageup');
+    if (scrollPosition > 685) {
+        pageUpEl.style.display = 'block';
+    } else {
+        pageUpEl.style.display = 'none';
+    }
+});
